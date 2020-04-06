@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>IMDB Movie search</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- =======================================================
+  * Template Name: Knight - v2.0.0
+  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <script type = "text/javascript" src="api.js"></script>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="https://images-na.ssl-images-amazon.com/images/G/02/shazam/EXPA-S4-01671-DigitalROSStatic-ARSDE-970x250-ADSP-02-POST-260da284-cf9e-4ba0-baaa-8f4394417720.JPG" alt=""></a>
+      <h1 data-aos="zoom-in">Welcome To Movie Search Studio</h1>
+      <h2 data-aos="fade-up">Search your movie and get detailed info</h2>
+      <a data-aos="fade-up" href="#about" class="btn-get-started scrollto">SEARCH YOUR MOVIE</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container">
+
+      <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+      <div class="logo d-block d-lg-none">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Sign in</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">web series</a>
+                <a class="dropdown-item" href="#">movies</a>
+                <a class="dropdown-item" href="#">TV episode</a>
+                <a class="dropdown-item" href="#">celebs</a>
+                <div class="dropdown-divider"></div>
+                
+              </div>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>-->
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="enter the name" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">search</button>
+          </form>
+        </div>
+      </nav>
+      <!--<nav class="nav-menu d-none d-lg-block">
+        <ul class="nav-inner">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="drop-down"><a href="">About</a>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#team">Team</a></li>
+
+              <li class="drop-down"><a href="#">Deep Drop</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#services">Services</a></li>
+
+          <li class="nav-logo"><a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></li>
+
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav>-->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Trending shows</h2>
+          <p>Latest shows with best ratings</p>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://www.imdb.com/title/tt11912196/?ref_=nv_sr_srsg_0">
+              <img src="https://i.ytimg.com/vi/LDirQBvwx7g/maxresdefault.jpg" class="d-block w-100" alt="...">
+            </a>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.thesun.co.uk/wp-content/uploads/2020/04/NINTCHDBPICT000574724602.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/proxy/wQGmoyWYa5BgjFvuqotofpZZkVDsnihJEfYtv5kQvGDMYwON2WwGI5YcV0NyJarg48_-xzSxzMA_Yqy9HwkC4v7WxpOuLVJsmkhcS9O1pVSRsOIyRHxuynGY7BUIDI3kWWOX5Z6sHrAEBdFU81XUrA3H5KZb0iiGR_tVXuvSYR1Gf7ucr38DVvLFy59ZCp0MgdFLPxZa1zIMtKQX-G-gHH8Dhp1TzoH_Dr3XZUXd_0OuqMZihhfRkzSh" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Fan Favourite</h2>
+          <p>Shows listed by the fans</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/originals/b5/47/ce/b547ceb267d87725def4325266c807c4.jpg"  width="300" height="300" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">JOKER *8.5</h5>
+                <p class="card-text">In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime.</p>
+                <a href="https://www.imdb.com/title/tt7286456/?ref_=hm_fanfav_tt_6_pd_fp1" class="btn btn-primary">Know more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="data:image/jpeg;base64,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"width="300" height="300" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">God Father</h5>
+                <p class="card-text">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+                <a href="https://www.imdb.com/title/tt0068646/?ref_=hm_fanfav_tt_23_pd_fp1" class="btn btn-primary">Know more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="https://cdn.cinematerial.com/p/297x/haeorwgk/1917-british-movie-poster-md.jpg?v=1579166770" width="300" height="300" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">1917 *8.4</h5>
+                <p class="card-text">April 6th, 1917. As a regiment assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap..</p>
+                <a href="https://www.imdb.com/title/tt8579674/?ref_=hm_fanfav_tt_5_pd_fp1" class="btn btn-primary">Know more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/M/MV5BZTNiY2FiYzktNWNmMi00YjMzLTkwMWItMGE3ZDc5OWYzODIyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL50_SY1000_CR0,0,673,1000_AL_.jpg" width="300" height="300" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">La Casa de Papel</h5>
+                <p class="card-text">A group of unique robbers assault the Factory of Moneda and Timbre to carry out the most perfect robbery in the history of Spain and take home 2.4 billion euros..</p>
+                <a href="https://www.imdb.com/title/tt6468322/?ref_=hm_fanfav_tt_2_pd_fp1" class="btn btn-primary">Know more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <figure>
+                  <img src="assets/img/featured-1.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <figure>
+                  <img src="assets/img/featured-2.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <figure>
+                  <img src="assets/img/featured-3.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <figure>
+                  <img src="assets/img/featured-4.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+                  <h4>Modi sit est</h4>
+                  <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-toggle="tab" href="#tab-2">
+                  <h4>Unde praesentium sed</h4>
+                  <p>Voluptas vel esse repudiandae quo excepturi.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-toggle="tab" href="#tab-3">
+                  <h4>Pariatur explicabo vel</h4>
+                  <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-toggle="tab" href="#tab-4">
+                  <h4>Nostrum qui quasi</h4>
+                  <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Section -->
+
+    <!-- ======= Why Us Section ======= -->
+   
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>message us your querry</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="info d-flex flex-column justify-content-center" data-aos="fade-right">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>zero gravity,pune</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>searchstdio@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9075565214</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-left">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <a href="#header" class="scrollto footer-logo"><img src="assets/img/hero-logo.png" alt=""></a>
+            <h3>Knight</h3>
+            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Knight</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
